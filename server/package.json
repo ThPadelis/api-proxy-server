@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Hide your API keys behind an API Proxy Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --config nodemon.json"
+  },
+  "author": {
+    "email": "padelis.theodosiou@gmail.com",
+    "name": "Pantelis Theodosiou",
+    "url": "https://pantelis.theodosiou.me"
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "expressjs",
+    "api",
+    "proxy-server"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
