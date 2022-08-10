@@ -14,13 +14,15 @@ const Navbar = () => {
         <div className="max-w-6xl mx-auto px-4">
             <div className="flex items-center justify-between">
                 <div>
-                    <a href="#!" className="flex items-center py-4 px-2">
-                        <span className="font-semibold text-lg text-all">API Proxy Server</span>
+                    <a href="/" className="flex items-center py-4 px-2">
+                        <span className="font-semibold text-lg text-all text-hover">Weather ReactJS</span>
                     </a>
                 </div>
                 <div className="flex items-center">
-                    <Icon prefix="fa-brands" icon="fa-github" extraClass="text-lg text-all py-4 px-2" />
-                    <Icon icon={isDarkMode ? 'fa-moon' : 'fa-sun'} extraClass="text-lg text-all py-4 px-2" />
+                    <a href="https://pantelis.theodosiou.me" target="_blank" rel="noreferrer">
+                        <Icon prefix="fa-brands" icon="fa-github" extraClass="text-lg text-all text-hover py-4 px-2" />
+                    </a>
+                    <Icon icon={isDarkMode ? 'fa-moon' : 'fa-sun'} extraClass="text-lg text-all text-hover py-4 px-2" />
                 </div>
             </div>
         </div>

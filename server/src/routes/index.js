@@ -12,6 +12,7 @@ router.get("/", cache("2 minutes"), async (request, response, next) => {
 
     const params = {
       appid: env.apiKey,
+      units: "metric",
       ...query,
     };
     const { data } = await axios.get(env.baseURL, { params });

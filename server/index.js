@@ -19,7 +19,7 @@ const createLimiter = rateLimit({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
-app.use(createLimiter);
+// app.use(createLimiter);
 
 // Routes
 app.use("/api", require("./src/routes")); // Every request that starts with /api will be handled by this handler
