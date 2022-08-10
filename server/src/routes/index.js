@@ -1,9 +1,12 @@
 const router = require("express").Router();
 const { default: axios } = require("axios");
+const apicache = require("apicache");
 const env = require("../utils/env");
 
+const cache = apicache.middleware;
+
 // Generic approach
-router.get("/", async (request, response, next) => {
+router.get("/", cache("2 minutes"), async (request, response, next) => {
   try {
     const query = request.query || {};
 
