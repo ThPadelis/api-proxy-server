@@ -12,7 +12,7 @@ const createLimiter = rateLimit({
   windowMs: 5 * 60 * 1000, // 5 minutes
   max: 5, // 5 requests per window
   message:
-    "Too many accounts created from this IP, please try again after 5 minutes",
+    "Too many requests made from this IP, please try again after 5 minutes",
 });
 
 // Middlewares
